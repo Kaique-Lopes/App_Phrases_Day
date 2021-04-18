@@ -18,7 +18,8 @@ class ViewController: UIViewController {
         phrases.append("Frase 1 - Um")
         phrases.append("Frase 2 - Dois")
         phrases.append("Frase 3 - Três")
-        lbResult.text = phrases[0]
+        let numberRandom = Int(arc4random_uniform(3))
+        lbResult.text = phrases[ Int(numberRandom)]
     }
     
 
